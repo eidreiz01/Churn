@@ -17,28 +17,28 @@ st.set_page_config(page_title="Dashboard", layout="wide")
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 ####### LOAD PICKLE FILES #######
-with open("pickle_files\gbc_best.pkl", "rb") as f: # gbc model
+with open("gbc_best.pkl", "rb") as f: # gbc model
     gbc_best = pickle.load(f)
 
-with open("pickle_files\\rfc_model.pkl", "rb") as f: # svc model
+with open("rfc_model.pkl", "rb") as f: # svc model
     rfc_model = pickle.load(f)
 
-with open("pickle_files\\adb_model.pkl", "rb") as f: # gnb model
+with open("adb_model.pkl", "rb") as f: # gnb model
     adb_model = pickle.load(f)
 
-with open("pickle_files\ohe_columns.pkl", "rb") as f: # one hot encoded columns.
+with open("ohe_columns.pkl", "rb") as f: # one hot encoded columns.
     ohe_df_columns = pickle.load(f)
 
-with open("pickle_files\imputer.pkl", "rb") as f: # imputer
+with open("imputer.pkl", "rb") as f: # imputer
     imputer = pickle.load(f)
 
-with open("pickle_files\scaler.pkl", "rb") as f: # scaler
+with open("scaler.pkl", "rb") as f: # scaler
     scaler = pickle.load(f)
 
-with open("pickle_files\label_encoder.pkl", "rb") as f: # label encoder
+with open("label_encoder.pkl", "rb") as f: # label encoder
     label_en = pickle.load(f)
 
-with open("pickle_files\syn_data_model.pkl", "rb") as f:
+with open("syn_data_model.pkl", "rb") as f:
     syn_model = pickle.load(f)
 
 ##### FUNCTIONS #####

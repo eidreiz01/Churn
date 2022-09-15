@@ -1,0 +1,7 @@
+-create a github repo
+-upload all the deployment files to the repo
+-go to: https://streamlit.io/cloud
+-sign up / sign in with your github acc
+-select the github repo, branch name, app name(app.py)
+-click advanced settings and select python 3.7
+-deploy
